@@ -4,7 +4,7 @@ const cors = require("cors")
 const app = express()
 
 // CONFIGURACIONES
-app.use(cors())
+app.use(cors({ origin: '*' }))
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
